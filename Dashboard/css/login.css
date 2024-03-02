@@ -1,9 +1,9 @@
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     min-height: 85vh;
 }
-#username, #mycity{
+#username, #mycity {
     border: 1px solid black;
     padding: 1em;
     margin: 1em;
@@ -11,10 +11,14 @@
     align-items: center;
     width: 450px;
 }
-#username{
+#username {
     margin-top: 3em;
 }
-.login{
+#error-message {
+    color: red;
+    text-align: center;
+}
+.login {
     border: 1px solid black;
     padding: 1em;
     margin: 1em;
@@ -25,12 +29,12 @@
     margin-left: 180px;
     background-color: #B7E000;
 }
-h1{
+h1 {
     text-align: center;
     font-size: 50px;
     margin-top: 50px;
 }
-.fields,#create{
+.fields,#create {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -3,16 +3,24 @@ function handleFormSubmit(event) {
     event.preventDefault();
 
     // Retrieve username and city values from the form
-    const username = document.getElementById("username").value;
-    const mycity = document.getElementById("mycity").value;
+    const username = document.getElementById("username").value.trim();
+    const mycity = document.getElementById("selectedcity").value.trim();
+
+    // Database query to see check the username validibility
+    
+    
+
+    // City validation
+    
+
 
     // Perform login validation
-    if (username.trim() === "taii" && mycity.trim() === "kelowna") {
+    if (username === "taii" && mycity === "kelowna") {
         // Redirect to the index page (replace 'index.html' with the actual URL)
         window.location.href = "../templates/index.html";
     } else {
         // Display an error message (replace 'error-message' with the ID of your error message element)
-        document.getElementById("error-message").textContent = "Invalid username or city. Please try again.";
+        document.getElementById("error-message").textContent = "Please choose your city.";
     }
 }
 
