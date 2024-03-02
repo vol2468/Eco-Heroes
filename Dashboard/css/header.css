@@ -13,7 +13,7 @@ footer{
     position: relative;
     margin-bottom: 0;
     height: 122px;
-    background-color: #CBF5E6;
+    background-color: #B7E000;
     margin-top: auto;
 }
 header a {
@@ -81,7 +81,7 @@ header a {
 #address,#email{
     padding-top: 8px;
 }
-#reset a{
+#create a{
     color: #B7E000;
     text-decoration: none;
 }
