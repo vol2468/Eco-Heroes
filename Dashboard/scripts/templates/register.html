@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Log in</title>
+		<title>Register</title>
 		<link rel="stylesheet" href="../../css/reset.css" />
 		<link rel="stylesheet" href="../../css/login.css" />
 		<link rel="stylesheet" href="../../css/header.css" />
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="../../js/loginValidation.js"></script>
+		<script src="../../js/registerValidation.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -19,15 +19,40 @@
 					<a id="user" href="login.html"><img alt='Profile' src = '../../images/defaultPic.png' height="50px"></a>
 				</header>
 			</div>
-			<h1>Log into your Eco Heroes Account!</h1>
+			<h1>Be an Eco Hero!</h1>
 			<div class="fields">
 				<form id="login-form" action="#" method="GET">
-				<input type="text" id="username" name="username" placeholder="Userame" required><br>
-				<button type="submit" class="login">Login</button>
+					<input type="text" id="username" name="username" placeholder="Username" required><br>
+					<!-- <input type="text" id="mycity" name="mycity" placeholder="My City" required><br> -->
+					<div id="mycity">
+						<select name="selectedcity" id="selectedcity">
+							<option value="">Choose your city</option>
+							<option value="vancouver">Vancouver</option>
+							<option value="kelowna">Kelowna</option>
+							<option value="victoria">Victoria</option>
+							<option value="calgary">Calgary</option>
+							<option value="edmonton">Edmonton</option>
+							<option value="reddeer">Red Deer</option>
+							<option value="saskatoon">Saskatoon</option>
+							<option value="regina">Regina</option>
+							<option value="princealbert">Prince Albert</option>
+							<option value="winnipeg">Winnipeg</option>
+							<option value="brandon">Brandon</option>
+							<option value="steinbach">Steinbach</option>
+							<option value="toronto">Toronto</option>
+							<option value="ottawa">Ottawa</option>
+							<option value="mississauga">mississauga</option>
+							<option value="montreal">Montréal</option>
+							<option value="quebec">Québec</option>
+							<option value="gatineau">Gatineau</option>
+						</select>
+					</div>
+					<p id="error-message"></p>
+				<button type="submit" class="login">Create</button>
 				</form>
 			</div>
 			<nav id="create">
-				<p>Don't have an account? <a class="create" href="register.html">Create!</a><br>
+				<p>Already have an account? <a class="create" href="login.html">Login!</a><br>
 				<!-- <a class="sign-up-link" href="register.html">Or Register Here</a></p> -->
 			</nav>
 		</div>
