@@ -12,5 +12,9 @@ def index():
     searchword = request.args.get('key', '')
     return render_template('compare.html', name=searchword)
 
+# @app.route('/login')
+# def login():
+#     return render_template('login.html')
+
 if __name__ == '__main__':
     app.run()
