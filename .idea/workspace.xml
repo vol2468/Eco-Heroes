@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="compare fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +144,28 @@
       <option name="project" value="LOCAL" />
       <updated>1709430822597</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="database init">
+      <created>1709431535182</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709431535182</updated>
+    </task>
+    <task id="LOCAL-00010" summary="database init">
+      <created>1709431662219</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709431662219</updated>
+    </task>
+    <task id="LOCAL-00011" summary="db import">
+      <created>1709431861605</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709431861605</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +186,8 @@
     <MESSAGE value="fix register routing by deleting .html&#10;auth added map route and compare route" />
     <MESSAGE value="fix register routing by deleting .html" />
     <MESSAGE value="compare fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="compare fix" />
+    <MESSAGE value="database init" />
+    <MESSAGE value="db import" />
+    <option name="LAST_COMMIT_MESSAGE" value="db import" />
   </component>
 </project>
