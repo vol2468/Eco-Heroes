@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/compare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
