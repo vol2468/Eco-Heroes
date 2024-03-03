@@ -73,7 +73,7 @@
 
                 const form = document.createElement("form");
                 form.method = "post";
-                form.action = "./compare.py";
+                form.action = "./../compare.py";
                 form.id = "latlongForm";
 
                 const lat = document.createElement("input");
@@ -84,7 +84,7 @@
 
                 const long = document.createElement("input");
                 long.name = "long";
-                long.value = "0";
+                long.value = e.latlng.toString().substring(e.latlng.toString().indexOf(",")+2, e.latlng.toString().length-1);
                 form.appendChild(long);
                 document.body.appendChild(form);
 
