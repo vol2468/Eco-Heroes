@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="" />
+    <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
