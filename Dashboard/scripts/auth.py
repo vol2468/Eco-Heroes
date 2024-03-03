@@ -6,7 +6,7 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for
 # from . import db
 # from flask_login import login_user, login_required, logout_user, current_user
 # </editor-fold>
-# from Dashboard.scripts.compare import compareQuality
+from scripts.compare import compare
 
 auth = Blueprint('auth', __name__)
 
@@ -31,26 +31,15 @@ def register():
     return render_template("register.html")
 
 
-@auth.route('/map')
-def mymap():
-    return render_template('map.html')
-
-
 @auth.route('/compare.py', methods=['GET', 'POST'])
-def compare():
+def call_compare():
     result = compare()
     return result
 
-
-
-@auth.route('/map.html')
+@auth.route('/map')
 def map():
     return render_template('map.html')
 
-@auth.route('/compare.py', methods=['GET', 'POST'])
-def call_compare():
-    result = compareQuality()
-    return result
 
 
 
