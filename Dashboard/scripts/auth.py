@@ -1,4 +1,6 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
+from scripts.compare import compareQuality
+
 
 # <editor-fold desc="Description">
 # from .models import User
@@ -27,6 +29,17 @@ def logout():
 @auth.route('/register')
 def register():
     return render_template("register.html")
+
+
+
+@auth.route('/map.html')
+def map():
+    return render_template('map.html')
+
+@auth.route('/compare.py', methods=['GET', 'POST'])
+def call_compare():
+    result = compareQuality()
+    return result
 
 
 

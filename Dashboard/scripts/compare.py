@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import requests
 import json
 
-def compare(): #(latitude, longitude)
+def compareQuality(): #(latitude, longitude)
     # if request.method == 'POST':
         currlatitude=0 #database
         currlongitude=0 #database
