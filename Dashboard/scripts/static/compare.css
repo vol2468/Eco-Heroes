@@ -1,0 +1,63 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+#container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#leftside-1, #rightside-1 {
+    text-align: center;
+}
+#airQ1, #airQ2 {
+    margin: 0.3em 1em 0.3em 1em;
+    border: 1px solid aqua; 
+    background-color: aqua;
+    border-radius: 70px;
+    font-size: 10em;
+}
+#win-lose {
+    text-align: center;
+    font-size: 3em;
+    color: red;
+}
+#container-2 {
+    margin-top: 1em;
+    margin-bottom: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#leftside-2, #rightside-2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.common {
+    font-size: 1.2em;
+    margin: 1em;
+}
+.desc {
+    border: 1px solid orange;
+    background-color: orange;
+    font-size: 1.2em;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    align-items: center;
+    width: 450px;
+}
+.pollutant {
+    color: blue;
+    font-size: 1.5em;
+}

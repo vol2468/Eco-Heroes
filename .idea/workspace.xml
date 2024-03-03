@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/register.html" afterDir="false" />
-    </list>
+    <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +123,42 @@
       <option name="project" value="LOCAL" />
       <updated>1709428488894</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix register routing by deleting .html">
+      <created>1709428586492</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709428586492</updated>
+    </task>
+    <task id="LOCAL-00007" summary="compare fix">
+      <created>1709430346607</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709430346607</updated>
+    </task>
+    <task id="LOCAL-00008" summary="compare fix">
+      <created>1709430822597</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709430822597</updated>
+    </task>
+    <task id="LOCAL-00009" summary="database init">
+      <created>1709431535182</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709431535182</updated>
+    </task>
+    <task id="LOCAL-00010" summary="database init">
+      <created>1709431662219</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709431662219</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +177,9 @@
     <MESSAGE value="fix index routing by deleting .html" />
     <MESSAGE value="fix login routing by deleting .html" />
     <MESSAGE value="fix register routing by deleting .html&#10;auth added map route and compare route" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix register routing by deleting .html&#10;auth added map route and compare route" />
+    <MESSAGE value="fix register routing by deleting .html" />
+    <MESSAGE value="compare fix" />
+    <MESSAGE value="database init" />
+    <option name="LAST_COMMIT_MESSAGE" value="database init" />
   </component>
 </project>

@@ -1,11 +1,12 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 
+
 # <editor-fold desc="Description">
 # from .models import User
 # from . import db
 # from flask_login import login_user, login_required, logout_user, current_user
 # </editor-fold>
-from Dashboard.scripts.compare import compare
+from scripts.compare import compare
 
 auth = Blueprint('auth', __name__)
 
@@ -29,9 +30,8 @@ def logout():
 def register():
     return render_template("register.html")
 
-
 @auth.route('/map')
-def mymap():
+def map():
     return render_template('map.html')
 
 
@@ -39,6 +39,8 @@ def mymap():
 def call_compare():
     result = compare()
     return result
+
+
 
 
 

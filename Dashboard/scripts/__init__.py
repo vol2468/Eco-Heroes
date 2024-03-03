@@ -1,6 +1,5 @@
-from flask import Flask
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-from os import path
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -24,8 +23,9 @@ def create_app():
 
     return app
 
-
+"""
 def create_database(app):
     if not path.exists('Dashboard/'+ DB_NAME):
         db.create_all(app=app)
         print("Created Database")
+"""
