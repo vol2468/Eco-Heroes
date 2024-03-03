@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Be an Eco Hero</title>
+    <link rel="stylesheet" href="../../static/reset.css" />
+    <link rel="stylesheet" href="../../static/index.css" />
+    <link rel="stylesheet" href="../../static/header.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+    <style>
+        #questionImg {
+            position: absolute;
+            left: 5%;
+            top: 160px;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+        }
+        #diffLogo {
+            position: absolute;
+            left: 5%;
+            top: 470px;
+            height: 50px;
+            width: 260px;
+            background-color: #B7E000;
+            padding: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            color: black;
+            border-radius: 30px;
+        }
+        #options {
+            position: absolute;
+            top: 160px;
+            right: 5%;
+            background-color: #c2f7a6;
+            padding: 10px;
+            width: 50%;
+            border-radius: 20px;
+        }
+        #op1,
+        #op2,
+        #op3,
+        #op4 {
+            background-color: #B7E000;
+            padding: 30px;
+            margin: auto;
+            margin-bottom: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            width: 90%;
+            color: black;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header">
+            <header>
+                <a href="index" id="logo">
+                <img src="../../static/images/logo_green.png" alt="Eco Heroes Logo" height="100px"></a>
+                <h1 id="command">Guess this Logo!</h1>
+                <a href="info" id="sdg"><img src="https://sycratech.com/wp-content/uploads/2023/04/sdgs-Goals.png" height="80px"/></a>
+                <a id="user" href="login"><img alt="Profile" src ="../../static/images/defaultPic.png" height="50px"></a>
+                <span id="level">Level: 2</span>
+            </header>
+        </div>
+    </div>
+    <img src="../static/images/Quiz_Icon_16.jpeg" id="questionImg">
+    <div id="diffLogo">
+        <b>
+            Change Logo ↺
+        </b>
+    </div>
+    <div id="options">
+        <b>
+            <div id="op1">
+                Responsible Consumption and Production
+            </div>
+            <div id="op2">
+                Peace Justice and Strong Institutions
+            </div>
+            <div id="op3">
+                Quality Education
+            </div>
+            <div id="op4">
+                Decent Work and Economic Growth
+            </div>
+        </b>
+    </div>
+    <script>
+        document.getElementById("diffLogo").onclick = function()
+        {
+            window.location.href = "quiz" + (Math.floor(Math.random() * 17) + 1);
+        };
+        
+        correctAnswer = "Peace Justice and Strong Institutions"
+        document.getElementById("op1").addEventListener("click", clickChoice1);
+        document.getElementById("op2").addEventListener("click", clickChoice2);
+        document.getElementById("op3").addEventListener("click", clickChoice3);
+        document.getElementById("op4").addEventListener("click", clickChoice4);
+        function clickChoice1() {
+            if (document.getElementById("op1").innerHTML.trim() == correctAnswer) {
+                document.getElementById("command").innerHTML = "CORRECT !!!";
+                document.getElementById("op1").removeEventListener("click", clickChoice1);
+                document.getElementById("op2").removeEventListener("click", clickChoice2);
+                document.getElementById("op3").removeEventListener("click", clickChoice3);
+                document.getElementById("op4").removeEventListener("click", clickChoice4);
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                  });
+            }
+            else {
+                document.getElementById("command").innerHTML = "Incorrect... Try again";
+                document.getElementById("op1").style.backgroundColor = "rgb(194, 247, 166)";
+                document.getElementById("op1").style.color = "rgb(194, 247, 166)";
+                document.getElementById("op1").removeEventListener("click", clickChoice1);
+            }
+        }
+        function clickChoice2() {
+            if (document.getElementById("op2").innerHTML.trim() == correctAnswer) {
+                document.getElementById("command").innerHTML = "CORRECT !!!";
+                document.getElementById("op1").removeEventListener("click", clickChoice1);
+                document.getElementById("op2").removeEventListener("click", clickChoice2);
+                document.getElementById("op3").removeEventListener("click", clickChoice3);
+                document.getElementById("op4").removeEventListener("click", clickChoice4);
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                  });
+            }
+            else {
+                document.getElementById("command").innerHTML = "Incorrect... Try again";
+                document.getElementById("op2").style.backgroundColor = "rgb(194, 247, 166)";
+                document.getElementById("op2").style.color = "rgb(194, 247, 166)";
+                document.getElementById("op2").removeEventListener("click", clickChoice2);
+            }
+        }
+        function clickChoice3() {
+            if (document.getElementById("op3").innerHTML.trim() == correctAnswer) {
+                document.getElementById("command").innerHTML = "CORRECT !!!";
+                document.getElementById("op1").removeEventListener("click", clickChoice1);
+                document.getElementById("op2").removeEventListener("click", clickChoice2);
+                document.getElementById("op3").removeEventListener("click", clickChoice3);
+                document.getElementById("op4").removeEventListener("click", clickChoice4);
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                  });
+            }
+            else {
+                document.getElementById("command").innerHTML = "Incorrect... Try again";
+                document.getElementById("op3").style.backgroundColor ="rgb(194, 247, 166)";
+                document.getElementById("op3").style.color = "rgb(194, 247, 166)";
+                document.getElementById("op3").removeEventListener("click", clickChoice3);
+            }
+        }
+        function clickChoice4() {
+            if (document.getElementById("op4").innerHTML.trim() == correctAnswer) {
+                document.getElementById("command").innerHTML = "CORRECT !!!";
+                document.getElementById("op1").removeEventListener("click", clickChoice1);
+                document.getElementById("op2").removeEventListener("click", clickChoice2);
+                document.getElementById("op3").removeEventListener("click", clickChoice3);
+                document.getElementById("op4").removeEventListener("click", clickChoice4);
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                  });
+            }
+            else {
+                document.getElementById("command").innerHTML = "Incorrect... Try again";
+                document.getElementById("op4").style.backgroundColor = "rgb(194, 247, 166)";
+                document.getElementById("op4").style.color = "rgb(194, 247, 166)";
+                document.getElementById("op4").removeEventListener("click", clickChoice4);
+            }
+        }
+    </script>
+    <div id="footer">
+        <footer>
+            <div>
+                <p id="copy">Copyright &copy 2024 Eco Heroes Inc. All right reserved.</p>
+                <nav id="navigate">
+                    <a href="#" id="policy">Privacy Policy</a> |
+                    <a href="#" id="cookies">Use of Cookies</a> |
+                    <a href="#" id="use">Term of Use</a> |
+                </nav>
+                <div id="info">
+                    <p><strong>Eco Heroes Office</strong></p>
+                    <div id="address">
+                        <p>3333 University Way</p>
+                        <p>Kelowna, BC</p>
+                        <p>V1V 1V7</p>
+                    </div>
+
+                </div>
+                <div id="contact">
+                    <p><strong>Contact Us</strong></p>
+                    <p id="email">ecoheroes@ubc.ca</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -16,5 +16,4 @@ class SDG(db.Model):
     desc = db.Column(db.String(10000))
     orgName = db.Column(db.String(500))
     ordLogo = db.Column()
-    orgLink = db.Column(db.String(300))
-"""
+    orgLink = db.Column(db.String(300))"""
