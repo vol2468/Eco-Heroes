@@ -3,6 +3,9 @@
     flex-direction: column;
     min-height: 85vh;
 }
+body {
+    background-color: #E3FFB8;
+}
 h1 {
     text-align: center;
     font-size: 50px;
@@ -42,12 +45,26 @@ h2 {
     }
 }
 #container-2 {
-    margin-top: 1em;
-    margin-bottom: 4em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#leftside-2, #rightside-2 {
+#leftside-2 {
+    margin-left: 2em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+#rightside-2 {
+    margin-right: 2em;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+#container-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#leftside-3, #rightside-3 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -74,4 +91,9 @@ h2 {
 .pollutant {
     color: blue;
     font-size: 1.5em;
+}
+#check-read {
+    margin: 2em 2em 3em 2em;
+    text-align: center;
+    font-size: 1.2em;
 }

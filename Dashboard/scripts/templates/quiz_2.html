@@ -70,18 +70,8 @@
                 <a id="user" href="login"><img alt='Profile' src='../static/images/defaultPic.png' height="50px"></a>
             </header>
         </div>
-        <div id="header">
-            <header>
-                <a href="index" id="logo">
-                <img src="../../static/images/logo_green.png" alt="Eco Heroes Logo" height="100px"></a>
-                <h1 id="command">Guess this Logo!</h1>
-                <a href="info" id="sdg"><img src="https://sycratech.com/wp-content/uploads/2023/04/sdgs-Goals.png" height="80px"/></a>
-                <a id="user" href="login"><img alt="Profile" src ="../../static/images/defaultPic.png" height="50px"></a>
-                <span id="level">Level: 2</span>
-            </header>
-        </div>
     </div>
-    <img src="../static/images/Quiz_Icon_17.jpeg" id="questionImg">
+    <img src="../static/images/Quiz_Icon_02.jpeg" id="questionImg">
     <div id="diffLogo">
         <b>
             Change Logo ↺
@@ -90,16 +80,16 @@
     <div id="options">
         <b>
             <div id="op1">
-                Partnerships for the Goals
+                Clean Water and Sanitation
             </div>
             <div id="op2">
-                No Poverty
+                Life Below Water
             </div>
             <div id="op3">
-                Reduce Inequality
+                Reduce Inequalities
             </div>
             <div id="op4">
-                Gender Equality
+                Zero Hunger
             </div>
         </b>
     </div>
@@ -109,7 +99,7 @@
             window.location.href = "quiz_" + (Math.floor(Math.random() * 17) + 1) + ".html";
         };
         
-        correctAnswer = "Partnerships for the Goals"
+        correctAnswer = "Zero Hunger"
         document.getElementById("op1").addEventListener("click", clickChoice1);
         document.getElementById("op2").addEventListener("click", clickChoice2);
         document.getElementById("op3").addEventListener("click", clickChoice3);
