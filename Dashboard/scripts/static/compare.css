@@ -42,12 +42,27 @@ h2 {
     }
 }
 #container-2 {
-    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#leftside-2 {
+    margin-left: 2em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+#rightside-2 {
+    margin-right: 2em;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+#container-3 {
     margin-bottom: 4em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#leftside-2, #rightside-2 {
+#leftside-3, #rightside-3 {
     text-align: center;
     display: flex;
     flex-direction: column;
