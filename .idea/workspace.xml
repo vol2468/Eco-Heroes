@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709425784099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix index routing by deleting .html">
+      <created>1709427409101</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709427409101</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reorganised files" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganised files" />
+    <MESSAGE value="fix index routing by deleting .html" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix index routing by deleting .html" />
   </component>
 </project>
