@@ -1,3 +1,5 @@
+/*
+
 function handleFormSubmit(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
@@ -23,3 +25,4 @@ function handleFormSubmit(event) {
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("login-form").addEventListener("submit", handleFormSubmit);
 });
+*/
