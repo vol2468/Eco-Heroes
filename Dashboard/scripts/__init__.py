@@ -2,6 +2,7 @@ from flask import Flask
 from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
 
+
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'r'
@@ -26,6 +27,7 @@ def create_app():
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
 
+    # from .models import User
     # from .models import User
 
     # db.create_all()

@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dashboard/flask_app/sdg maker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/flask_app/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/flask_app/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/images/SDG Images/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/flask_app/images/SDG Images/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/models.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +51,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Dashboard/main.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Dashboard/scripts/models.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -56,11 +73,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Dashboard/flask_app" />
       <recent name="$PROJECT_DIR$/Dashboard/scripts/static" />
       <recent name="$PROJECT_DIR$/Dashboard/scripts/static/css" />
       <recent name="$PROJECT_DIR$/Dashboard" />
       <recent name="$PROJECT_DIR$/Dashboard/scripts" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -249,7 +266,21 @@
       <option name="project" value="LOCAL" />
       <updated>1709448107116</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="chnages">
+      <created>1709490195721</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709490195721</updated>
+    </task>
+    <task id="LOCAL-00024" summary="home fix">
+      <created>1709491368641</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1709491368641</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,6 +313,8 @@
     <MESSAGE value="init update" />
     <MESSAGE value="auth clean" />
     <MESSAGE value="database creation in init" />
-    <option name="LAST_COMMIT_MESSAGE" value="database creation in init" />
+    <MESSAGE value="chnages" />
+    <MESSAGE value="home fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="home fix" />
   </component>
 </project>

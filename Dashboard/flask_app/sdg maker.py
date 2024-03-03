@@ -1,0 +1,50 @@
+import os
+import sqlite3
+
+# Connect to the SQLite database
+connection = sqlite3.connect('database.db')
+cursor = connection.cursor()
+
+# Create the sdgs table if it doesn't exist
+cursor.execute('''CREATE TABLE IF NOT EXISTS sdgs (
+                    id INTEGER PRIMARY KEY,
+                    img BLOB,
+                    description TEXT
+                )''')
+
+# Function to read image file as binary data
+def read_image(filename):
+    with open(filename, 'rb') as file:
+        return file.read()
+
+# List of descriptions
+descriptions = [
+    "Ending poverty in all of its manifestations is the goal of SDG 1. Its goals include guaranteeing that everyone has equal access to economic resources, basic services, land ownership and control, natural resources, and cutting-edge technologies. It also aims to protect the most vulnerable and impoverished members of society.",
+    "The second goal is to eradicate hunger from the planet by 2030.Since 2015, there has been a startling rise in the worldwide problem of hunger and food insecurity. This trend has been made worse by a number of reasons, such as the pandemic, armed conflict, climate change, and widening inequality.",
+    "The goal of Sustainable Development Goal (SDG) 3 is to guarantee and enhance everyone's health and well-being, regardless of age. It covers every important area of health, such as maternity, child, and reproductive health.On Earth, there are non-communicable, chronic, and infectious diseases.",
+    "Make sure that everyone has access to high-quality, inclusive education, and encourage lifelong learning opportunities. Goal 4 is to guarantee inclusive, equitable, high-quality education and to encourage possibilities for lifelong learning for all.",
+    "Achieving gender parity and empowering all women and girls is the goal of Goal 5. Equal rights for men and women exist. Additionally, achieving all of the objectives in the 2030 Sustainable Development Agenda depends on it.",
+    "Goal 6: Ensure access to water and sanitation services for all. Access to clean water, sanitation and hygiene are basic needs for human health and well-being..",
+    "Goal 7 is to ensure the availability of clean and affordable energy, which is key to the development of agriculture, trade, communication, education, health and transport. The world is still moving towards sustainable energy goals, but not fast enough.",
+    "Sustainable Development Goal 8 recognizes the importance of sustainable economic growth and high economic productivity in creating well-paid, high-quality jobs and calls for opportunities for full employment and decent work for all.",
+    "Goal 9 aims to create sustainable infrastructure, promote sustainable industrialization and promote innovation. Economic growth, social development and climate action are highly dependent on investments in infrastructure, sustainable industrial development and technological development.",
+    "SDG 10 addresses inequality within and between countries. It requires states to reduce income inequality and inequality based on age, gender, disability, race, ethnicity, national origin, religion, or economic or other status.",
+    "Goal 11 is to make cities and settlements inclusive, safe, resilient and sustainable. Cities represent the future of global life.",
+    "Sustainable Development Goal 12 promotes more sustainable consumption and production patterns through various means, including special policies and international agreements on the management of environmentally toxic materials.",
+    "Sustainable Development Goal 13 calls for action to combat climate change and its impacts. Climate change is now affecting every country on every continent. It disrupts national economies and affects lives, making people, communities and countries pay dearly today and even more tomorrow.",
+    "Goal 14: Conserve and sustainably use the oceans, seas and marine resources. Goal 14 concerns the conservation and sustainable use of oceans, seas and marine natural resources. Healthy oceans and seas are essential for human existence and life on earth.",
+    "Protecting, restoring, and advancing the preservation and sustainable use of terrestrial ecosystems are the goals of SDG 15. This includes working to prevent desertification, manage forests sustainably, stop deforestation, rehabilitate degraded land and soil, stop the loss of biodiversity, and safeguard threatened species.",
+    "Goal 16 of the Global Goals is 'peace, justice, and strong institutions.' Encourage inclusive and peaceful societies for long-term growth; ensure that everyone has access to justice; and create inclusive, accountable, and successful institutions at all levels.",
+    "Reviving the global cooperation for sustainable development is the focus of Goal 17. The global 2030 Agenda urges both developed and developing nations to take action in order to guarantee that no one is left behind."
+]
+
+# Insert images and descriptions into the sdgs table
+for idx, description in enumerate(descriptions, start=1):
+    # Construct the image filename
+    image_filename = os.path.join('images', 'SDG Images', f'{idx}.jpg')
+    img_data = read_image(image_filename)
+    cursor.execute("INSERT INTO sdgs (id, img, description) VALUES (?, ?, ?)", (idx, img_data, description))
+
+# Commit changes and close connection
+connection.commit()
+connection.close()
