@@ -3,19 +3,78 @@
     <head>
         <meta charset="utf-8">
         <title>Compare</title>
+        <link rel="stylesheet" href="../../static/reset.css" />
+        <link rel="stylesheet" href="../../static/compare.css" />
+        <link rel="stylesheet" href="../../static/header.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../../static/js/compare.js"></script>
     </head>
     <body>
-        <!-- Latitude {{ arg1 }} !!!!
-        Longitude {{ arg2 }} !!!! -->
-        Data: <br>
-        <!-- index: {{index}} <br>
-        first: {{First}} <br> -->
-        aqi: {{aqi}} <br>
-        category: {{category}} <br>
-        dominant: {{dominant}} <br>
-        <!-- pollutant: {{pollutant}} <br> -->
-        effects: {{effects}} <br>
-        children: {{children}} <br>
+        <div class="wrapper">
+            <div id="header">
+                <header>
+                    <a href="index.html" id="logo">
+                    <img src="../../static/images/logo_green.png" alt="Eco Heroes Logo" height="100px"></a>
+                    <a href="info.html" id="sdg"><img src="https://sycratech.com/wp-content/uploads/2023/04/sdgs-Goals.png" height="80px"/></a>
+                    <a id="user" href="login.html"><img alt="Profile" src ="../../static/images/defaultPic.png" height="50px"></a>
+                </header>
+            </div>
+            <h1>Air pollution for</h1>
+            <div id="container-1">
+                <div id="leftside-1">
+                    <h2>Your city is ...</h2>
+                    <p id="airQ1">89</p>
+                </div>
+                <div id="rightside-1">
+                    <h2>Your selected city is ...</h2>
+                    <p id="airQ2">{{aqi}}</p>
+                </div>
+            </div>
+            <p id="win-lose"></p>
+            <div id="container-2">
+                <div id="leftside-2">
+                    <p class="common">The most common pollutant is <span class="pollutant">SO3</span></p>
+                    <p class="desc">Effect: <span>bla bla bla</span></p>
+                    <p class="desc">Recommendation: <span>bla bla bla</span></p>
+                </div>
+                <div id="rightside-2">
+                    <p class="common">The most common pollutant is <span class="pollutant">{{dominant}}</span></p>
+                    <p class="desc">Effect: <span>{{effects}}</span></p>
+                    <p class="desc">Recommendation: <span>{{children}}</span></p>
+                </div>
+            </div>
+           
+            <!-- aqi: {{aqi}} <br>
+            category: {{category}} <br>
+            dominant: {{dominant}} <br>
+            effects: {{effects}} <br>
+            children: {{children}} <br> -->
+        </div>
+        <div id="footer">
+            <footer>
+                <div>
+                <p id="copy">Copyright &copy 2024 Eco Heroes Inc. All right reserved.</p>
+                <nav id="navigate">
+                    <a href="#" id="policy">Privacy Policy</a> |
+                    <a href="#" id="cookies">Use of Cookies</a> |
+                    <a href="#" id="use">Term of Use</a> |
+                </nav>
+                <div id="info">
+                    <p><strong>Eco Heroes Office</strong></p>
+                    <div id="address">
+                        <p>3333 University Way</p>
+                        <p>Kelowna, BC</p>
+                        <p>V1V 1V7</p>
+                    </div>
+                    
+                </div>
+                <div id="contact">
+                    <p><strong>Contact Us</strong></p>
+                    <p id="email">ecoheroes@ubc.ca</p>
+                </div>
+                </div>
+            </footer>
+        </div>
 
 
     </body>
