@@ -1,17 +1,25 @@
-from flask import Flask, render_template, request
-# from flask_sqlalchemy import SQLAlchemy
-
-from os import path
-
-# db = SQLAlchemy()
-DB_NAME = "database.db"
+from flask import Flask
+from flask_login import UserMixin
+from flask_sqlalchemy import SQLAlchemy
 
 
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'r'
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
-    # db.init_app(app)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+    db = SQLAlchemy(app)
+
+    class User(db.Model, UserMixin):
+        username = db.Column(db.String(100), primary_key=True, unique=True)
+        city = db.Column(db.String(100))
+        lat = db.Column(db.String(100))
+        lon = db.Column(db.String(100))
+
+    def __init__(self, username, city, lat, lon):
+        self.name = username
+        self.city = city
+        self.lat = lat
+        self.lon = lon
 
     from .views import views
     from .auth import auth
@@ -19,14 +27,19 @@ def create_app():
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
 
-    # from .models import User, SDG
+    # from .models import User
 
-    create_database(app)
+    # db.create_all()
+
+    with app.app_context():
+        db.create_all()
 
     return app
 
 
+"""
 def create_database(app):
-    if not path.exists('Dashboard/' + DB_NAME):
-        # db.create_all(app=app)
+    if not path.exists('Dashboard/scripts/' + DB_NAME):
+        db.create_all()
         print("Created Database!")
+"""
