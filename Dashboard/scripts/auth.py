@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-from . import compare
+from scripts.compare import compare
 
 auth = Blueprint('auth', __name__)
 
