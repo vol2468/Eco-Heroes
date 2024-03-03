@@ -40,14 +40,17 @@ def register():
 def map():
     return render_template('map.html')
 
+
 @auth.route('/compare.py', methods=['GET', 'POST'])
 def call_compare():
     result = compare()
     return result
 
+
 @auth.route('/info')
 def info():
     return render_template("info.html")
+
 
 @auth.route('/quiz')
 def quiz():
