@@ -8,7 +8,6 @@ views = Blueprint('views', __name__)
 
 
 @views.route('/')
-# @login_required
 def home():
     # if request.method == 'POST':
     #     username = request.form.get('username')#Gets the note from the HTML
