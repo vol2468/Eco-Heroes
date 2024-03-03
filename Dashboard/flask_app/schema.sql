@@ -10,7 +10,7 @@ CREATE TABLE kids (
 );
 CREATE TABLE sdgs (
     id INTEGER PRIMARY KEY,
-    img IMAGE,
+    img BLOB,
     description varchar(100)
 );
 
