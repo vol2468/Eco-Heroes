@@ -37,6 +37,10 @@
             width: 100%;
             z-index: -1;
         }
+        .popup, button {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 
@@ -76,7 +80,7 @@
 
         var clickAnywherePop = L.popup()
             .setLatLng([40, -35])
-            .setContent("<b>Click anywhere on the Map.</b>")
+            .setContent("<div class=\"popup\"><b>Click anywhere on the Map.</b>")
             .openOn(map);
 
         var toComparePagePop = L.popup();
@@ -84,11 +88,9 @@
             toComparePagePop
                 .setLatLng(e.latlng)
                 .setContent(
-                    "<b>You clicked " + e.latlng.toString().substring(6,) + "</b>"
-                    + "<br>Compare with your City?"
-                    + "<br>Lat: " + e.latlng.toString().substring(7, e.latlng.toString().indexOf(","))
-                    + "<br>Long: " + e.latlng.toString().substring(e.latlng.toString().indexOf(",") + 2, e.latlng.toString().length - 1)
-                    + "<button id=\"jumpButton\">Let's Compare!</button>"
+                    "<div class=\"popup\"><b>You clicked " + e.latlng.toString().substring(6,) + "</b>"
+                    + "<br>Compare with your City?<br>"
+                    + "<button id=\"jumpButton\">Let's Compare!</button></div>"
                 )
                 .openOn(map);
 
