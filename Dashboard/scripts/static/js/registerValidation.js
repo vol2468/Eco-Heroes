@@ -1,4 +1,3 @@
-/*
 function handleFormSubmit(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
@@ -16,9 +15,9 @@ function handleFormSubmit(event) {
 
 
     // Perform login validation
-    if (username === "taii" && mycity === "kelowna") {
+    if (username === "taii" && mycity !== "") {
         // Redirect to the index page (replace 'index.html' with the actual URL)
-        window.location.href = "../templates/index.html";
+        window.location.href = "index";
     } else {
         // Display an error message (replace 'error-message' with the ID of your error message element)
         document.getElementById("error-message").textContent = "Please choose your city.";
@@ -29,4 +28,3 @@ function handleFormSubmit(event) {
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("login-form").addEventListener("submit", handleFormSubmit);
 });
-*/

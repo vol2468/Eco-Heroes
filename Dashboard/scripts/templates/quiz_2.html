@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../../static/index.css" />
     <link rel="stylesheet" href="../../static/header.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../static/js/indexBubble.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
     <style>
         #questionImg {
@@ -63,11 +62,11 @@
         <div id="header">
             <header>
                 <a href="index" id="logo">
-                    <img src="../static/images/logo_green.png" alt="Eco Heroes Logo" height="100px"></a>
+                <img src="../../static/images/logo_green.png" alt="Eco Heroes Logo" height="100px"></a>
                 <h1 id="command">Guess this Logo!</h1>
-                <a href="info" id="sdg"><img src="https://sycratech.com/wp-content/uploads/2023/04/sdgs-Goals.png"
-                        height="80px" /></a>
-                <a id="user" href="login"><img alt='Profile' src='../static/images/defaultPic.png' height="50px"></a>
+                <a href="info" id="sdg"><img src="https://sycratech.com/wp-content/uploads/2023/04/sdgs-Goals.png" height="80px"/></a>
+                <a id="user" href="login"><img alt="Profile" src ="../../static/images/defaultPic.png" height="50px"></a>
+                <span id="level">Level: 2</span>
             </header>
         </div>
     </div>
@@ -96,7 +95,7 @@
     <script>
         document.getElementById("diffLogo").onclick = function()
         {
-            window.location.href = "quiz_" + (Math.floor(Math.random() * 17) + 1) + ".html";
+            window.location.href = "quiz" + (Math.floor(Math.random() * 17) + 1);
         };
         
         correctAnswer = "Zero Hunger"
@@ -120,6 +119,7 @@
             else {
                 document.getElementById("command").innerHTML = "Incorrect... Try again";
                 document.getElementById("op1").style.backgroundColor = "rgb(194, 247, 166)";
+                document.getElementById("op1").style.color = "rgb(194, 247, 166)";
                 document.getElementById("op1").removeEventListener("click", clickChoice1);
             }
         }
@@ -139,6 +139,7 @@
             else {
                 document.getElementById("command").innerHTML = "Incorrect... Try again";
                 document.getElementById("op2").style.backgroundColor = "rgb(194, 247, 166)";
+                document.getElementById("op2").style.color = "rgb(194, 247, 166)";
                 document.getElementById("op2").removeEventListener("click", clickChoice2);
             }
         }
@@ -158,6 +159,7 @@
             else {
                 document.getElementById("command").innerHTML = "Incorrect... Try again";
                 document.getElementById("op3").style.backgroundColor ="rgb(194, 247, 166)";
+                document.getElementById("op3").style.color = "rgb(194, 247, 166)";
                 document.getElementById("op3").removeEventListener("click", clickChoice3);
             }
         }
@@ -177,6 +179,7 @@
             else {
                 document.getElementById("command").innerHTML = "Incorrect... Try again";
                 document.getElementById("op4").style.backgroundColor = "rgb(194, 247, 166)";
+                document.getElementById("op4").style.color = "rgb(194, 247, 166)";
                 document.getElementById("op4").removeEventListener("click", clickChoice4);
             }
         }
