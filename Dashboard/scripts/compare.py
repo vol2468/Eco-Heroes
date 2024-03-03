@@ -3,7 +3,7 @@ import requests
 import json
 
 
-def compareQuality(): #(latitude, longitude)
+def compare(): #(latitude, longitude)
     # if request.method == 'POST':
         currlatitude=0 #database
         currlongitude=0 #database

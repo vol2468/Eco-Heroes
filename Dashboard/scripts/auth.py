@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-from scripts.compare import compareQuality
 
 
 # <editor-fold desc="Description">
@@ -38,7 +37,7 @@ def mymap():
 
 
 @auth.route('/compare.py', methods=['GET', 'POST'])
-def call_compare():
+def compare():
     result = compare()
     return result
 
