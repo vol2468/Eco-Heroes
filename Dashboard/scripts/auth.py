@@ -7,7 +7,7 @@ from scripts.compare import compareQuality
 # from . import db
 # from flask_login import login_user, login_required, logout_user, current_user
 # </editor-fold>
-from Dashboard.scripts.compare import compare
+# from Dashboard.scripts.compare import compareQuality
 
 auth = Blueprint('auth', __name__)
 
