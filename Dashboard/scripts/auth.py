@@ -34,6 +34,10 @@ def register():
 def map():
     return render_template('map.html')
 
+@auth.route('/quiz')
+def quiz():
+    return render_template('quiz.html')
+
 
 @auth.route('/compare.py', methods=['GET', 'POST'])
 def call_compare():
