@@ -6,11 +6,11 @@ compare = Flask(__name__)
 @compare.route('/') 
 
 def compare(): #(latitude, longitude)
-    if request.method == 'POST':
+    # if request.method == 'POST':
         currlatitude=0 #database
         currlongitude=0 #database
         mapdata=request.form
-        latitude=34
+        latitude=float(mapdata.get('lat'))
         longitude=float(mapdata.get('long'))
         url = 'https://airquality.googleapis.com/v1/currentConditions:lookup'
         KEY = 'AIzaSyB9dQ6T8KIegYRV4j8FSlPdVGKc9EuhY68'
@@ -35,24 +35,24 @@ def compare(): #(latitude, longitude)
         response = requests.post(url, json=data, headers=header)
         api_response = response.json()
         index=api_response.get('indexes')
-        indexFirst=index[0]
-        quality=indexFirst.get('aqi')
-        categ=indexFirst.get('category')
-        dominant=indexFirst.get('dominantPollutant')
-        pollutant=api_response.get('pollutants')
-        effects=''
-        for i in range(1,len(pollutant)):
-            code=pollutant[i].get('code')
-            if(code==dominant):
-                    additional=pollutant[i].get('additionalInfo')
-                    effects=additional.get('effects')
-        recommendation=api_response.get('healthRecommendations')
-        children=recommendation.get('children')
-    
-
-        # json_data = json.dumps(api_response, indent=2)
-        
-        return render_template('compare', index=index, First=indexFirst, aqi=quality, 
-                            category=categ, dominant=dominant, pollutant=pollutant, effects=effects, children=children)
+        if index:
+            indexFirst=index[0]
+            quality=indexFirst.get('aqi')
+            categ=indexFirst.get('category')
+            dominant=indexFirst.get('dominantPollutant')
+            pollutant=api_response.get('pollutants')
+            effects=''
+            for i in range(1,len(pollutant)):
+                code=pollutant[i].get('code')
+                if(code==dominant):
+                        additional=pollutant[i].get('additionalInfo')
+                        effects=additional.get('effects')
+            recommendation=api_response.get('healthRecommendations')
+            children=recommendation.get('children')    
+            # json_data = json.dumps(api_response, indent=2)
+            
+            return render_template('compare.html', aqi=quality, category=categ, dominant=dominant, effects=effects, children=children)
+        else:
+            return render_template('map.html')
 if __name__ == '__main__': 
     compare.run() 

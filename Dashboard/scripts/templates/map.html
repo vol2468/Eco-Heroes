@@ -45,12 +45,12 @@
         <div id="header">
             <header>
                 <a href="index" id="logo">
-                    <img src="../../images/logo_green.png" alt="Eco Heroes Logo" height="100px"></a>
+                    <img src="../../static/images/logo_green.png" alt="Eco Heroes Logo" height="100px"></a>
                 <h1>Choose a City to Compare!</h1>
 
                 <a href="info" id="sdg"><img src="https://sycratech.com/wp-content/uploads/2023/04/sdgs-Goals.png"
                         height="80px" /></a>
-                <a id="user" href="login"><img alt='Profile' src='../../images/defaultPic.png' height="50px"></a>
+                <a id="user" href="login"><img alt='Profile' src='../../static/images/defaultPic.png' height="50px"></a>
             </header>
         </div>
     </div>
@@ -94,17 +94,19 @@
 
             const form = document.createElement("form");
             form.method = "post";
-            form.action = "./compare.html";
+            form.action = "./../compare.py";
             form.id = "latlongForm";
 
             const lat = document.createElement("input");
             lat.name = "lat";
+            lat.style.display = "none";
             lat.value = e.latlng.toString().substring(7, e.latlng.toString().indexOf(","));
             form.appendChild(lat);
             document.body.appendChild(form);
 
             const long = document.createElement("input");
             long.name = "long";
+            long.style.display = "none";
             long.value = e.latlng.toString().substring(e.latlng.toString().indexOf(",") + 2, e.latlng.toString().length - 1);
             form.appendChild(long);
             document.body.appendChild(form);
