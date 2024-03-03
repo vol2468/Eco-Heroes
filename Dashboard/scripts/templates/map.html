@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Map Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <style>
+        h1,h2{
+            position: absolute;
+            margin: auto;
+
+        }
+        div{
+            text-align: center;
+        }
+        #map {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Explore Other Cities!</h1>
+        <h2>Click Anywhere on the Map to Compare with ____ !</h2>
+        <div id="map"></div>
+
+    </main>
+    <script>
+        var currentLat = 49.94248073388104;
+        var currentLong = -119.39442870495314;
+        var currentCity = "Kelowna";
+        
+        var map = L.map('map', {
+            center: [34.07301184622692, 9.45475568474664],
+            zoom: 2
+        });
+        map.setMaxBounds(map.getBounds());
+
+        L.tileLayer = L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {
+            minZoom: 2,
+            maxZoom: 5,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+        }).addTo(map);
+        var marker = L.marker([currentLat, currentLong]).addTo(map);
+        marker.bindPopup("<b>" + currentCity + "</b><br>Your Location").openPopup();
+
+        var clickAnywherePop = L.popup()
+        .setLatLng([40, -35])
+        .setContent("Click anywhere on the Map.")
+        .openOn(map);
+
+        var toComparePagePop = L.popup();
+        function onMapClick(e) {
+            toComparePagePop
+                .setLatLng(e.latlng)
+                .setContent(
+                    "<b>You clicked " + e.latlng.toString().substring(6,) + "</b>" 
+                    + "<br>Compare with your City?"
+                    + "<br>Lat: " + e.latlng.toString().substring(7, e.latlng.toString().indexOf(","))
+                    + "<br>Long: " + e.latlng.toString().substring(e.latlng.toString().indexOf(",")+2, e.latlng.toString().length-1)
+                    )
+                .openOn(map);
+
+                const form = document.createElement("form");
+                form.method = "post";
+                form.action = "./../compare.py";
+                form.id = "latlongForm";
+
+                const lat = document.createElement("input");
+                lat.name = "lat";
+                lat.value = e.latlng.toString().substring(7, e.latlng.toString().indexOf(","));
+                form.appendChild(lat);
+                document.body.appendChild(form);
+
+                const long = document.createElement("input");
+                long.name = "long";
+                long.value = e.latlng.toString().substring(e.latlng.toString().indexOf(",")+2, e.latlng.toString().length-1);
+                form.appendChild(long);
+                document.body.appendChild(form);
+
+                alert(lat.value);
+                form.submit();
+        }        
+        map.on('click', onMapClick);
+    </script>
+</body>
+</html>

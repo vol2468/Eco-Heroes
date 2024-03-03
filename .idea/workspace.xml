@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dashboard/scripts/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dashboard/scripts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/compare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +34,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Dashboard/js/loginValidation.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dashboard/main.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dashboard/scripts/models.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,10 +58,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Dashboard/scripts/static" />
+      <recent name="$PROJECT_DIR$/Dashboard/scripts/static/css" />
       <recent name="$PROJECT_DIR$/Dashboard" />
       <recent name="$PROJECT_DIR$/Dashboard/scripts" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Dashboard/templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,6 +97,14 @@
       <option name="presentableId" value="Default" />
       <updated>1709351982007</updated>
     </task>
+    <task id="LOCAL-00001" summary="reorganised files">
+      <created>1709425784099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709425784099</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,5 +117,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="reorganised files" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganised files" />
   </component>
 </project>

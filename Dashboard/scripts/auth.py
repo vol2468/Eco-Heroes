@@ -29,6 +29,8 @@ def register():
     return render_template("register.html")
 
 
+
+
 """
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
