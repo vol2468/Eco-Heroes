@@ -30,15 +30,16 @@ def logout():
 def register():
     return render_template("register.html")
 
+@auth.route('/map')
+def map():
+    return render_template('map.html')
+
 
 @auth.route('/compare.py', methods=['GET', 'POST'])
 def call_compare():
     result = compare()
     return result
 
-@auth.route('/map')
-def map():
-    return render_template('map.html')
 
 
 
