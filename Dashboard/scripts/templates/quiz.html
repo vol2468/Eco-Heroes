@@ -15,9 +15,22 @@
             position: absolute;
             left: 5%;
             top: 160px;
-            height: 400px;
-            width: 400px;
+            height: 300px;
+            width: 300px;
             border-radius: 20px;
+        }
+        #diffLogo {
+            position: absolute;
+            left: 5%;
+            top: 470px;
+            height: 50px;
+            width: 260px;
+            background-color: #B7E000;
+            padding: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            color: black;
+            border-radius: 30px;
         }
         #options {
             position: absolute;
@@ -59,6 +72,11 @@
         </div>
     </div>
     <img src="../static/images/E_SDG_Icons-10.jpeg" id="questionImg">
+    <div id="diffLogo">
+        <b>
+            Change Logo ↺
+        </b>
+    </div>
     <div id="options">
         <b>
             <div id="op1">
@@ -76,6 +94,11 @@
         </b>
     </div>
     <script>
+        document.getElementById("diffLogo").onclick = function()
+        {
+            alert("change logo");
+        };
+        
         correctAnswer = "Reduce Inequality"
         document.getElementById("op1").addEventListener("click", clickChoice1);
         document.getElementById("op2").addEventListener("click", clickChoice2);
