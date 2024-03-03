@@ -50,6 +50,6 @@ def compare(): #(latitude, longitude)
 
         # json_data = json.dumps(api_response, indent=2)
         
-        return render_template('compare.html', index=index, First=indexFirst, aqi=quality, 
+        return render_template('compare', index=index, First=indexFirst, aqi=quality, 
                                category=categ, dominant=dominant, pollutant=pollutant, effects=effects, children=children)
 
