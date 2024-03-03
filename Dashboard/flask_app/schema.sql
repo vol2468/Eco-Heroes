@@ -11,7 +11,7 @@ CREATE TABLE kids (
 CREATE TABLE sdgs (
     id INTEGER PRIMARY KEY,
     img IMAGE,
-    explanation varchar(100)
+    description varchar(100)
 );
 
 CREATE TABLE city (

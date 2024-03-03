@@ -1,11 +1,10 @@
-from flask import Blueprint, request, flash, render_template
-from flask_login import login_required, current_user
-import json
+from flask import Blueprint
+
 
 views = Blueprint('views', __name__)
 
 
 @views.route('/')
 def home():
-    return render_template("index.html")
+    return "<h1>Test<h1>"
 
