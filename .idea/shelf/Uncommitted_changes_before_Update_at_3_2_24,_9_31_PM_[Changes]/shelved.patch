@@ -1,0 +1,42 @@
+Index: Dashboard/scripts/static/js/loginValidation.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>function handleFormSubmit(event) {\n    // Prevent the default form submission behavior\n    event.preventDefault();\n\n    // Retrieve username and city values from the form\n    const username = document.getElementById(\"username\").value.trim();\n\n    // Database query for the username validation\n    \n\n\n    // Perform login validation\n    if (username === \"taii\") {\n        // Redirect to the index page (replace 'index.html' with the actual URL)\n        window.location.href = \"../templates/index.html\";\n    } else {\n        // Display an error message (replace 'error-message' with the ID of your error message element)\n        document.getElementById(\"error-message\").textContent = \"Please enter your username.\";\n    }\n}\n\n// Add event listener to the form submission event\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    document.getElementById(\"login-form\").addEventListener(\"submit\", handleFormSubmit);\n});\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Dashboard/scripts/static/js/loginValidation.js b/Dashboard/scripts/static/js/loginValidation.js
+--- a/Dashboard/scripts/static/js/loginValidation.js	(revision 6ac21688ff8784b03345ea46f98cf0d363b270b6)
++++ b/Dashboard/scripts/static/js/loginValidation.js	(date 1709443837112)
+@@ -1,3 +1,5 @@
++/*
++
+ function handleFormSubmit(event) {
+     // Prevent the default form submission behavior
+     event.preventDefault();
+@@ -23,3 +25,4 @@
+ document.addEventListener("DOMContentLoaded", function() {
+     document.getElementById("login-form").addEventListener("submit", handleFormSubmit);
+ });
++*/
+Index: Dashboard/scripts/static/js/registerValidation.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>function handleFormSubmit(event) {\n    // Prevent the default form submission behavior\n    event.preventDefault();\n\n    // Retrieve username and city values from the form\n    const username = document.getElementById(\"username\").value.trim();\n    const mycity = document.getElementById(\"selectedcity\").value.trim();\n\n    // Database query for the username and city validation\n    \n    \n\n    // Store them in database\n    \n\n\n    // Perform login validation\n    if (username === \"taii\" && mycity === \"kelowna\") {\n        // Redirect to the index page (replace 'index.html' with the actual URL)\n        window.location.href = \"../templates/index.html\";\n    } else {\n        // Display an error message (replace 'error-message' with the ID of your error message element)\n        document.getElementById(\"error-message\").textContent = \"Please choose your city.\";\n    }\n}\n\n// Add event listener to the form submission event\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    document.getElementById(\"login-form\").addEventListener(\"submit\", handleFormSubmit);\n});\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Dashboard/scripts/static/js/registerValidation.js b/Dashboard/scripts/static/js/registerValidation.js
+--- a/Dashboard/scripts/static/js/registerValidation.js	(revision 6ac21688ff8784b03345ea46f98cf0d363b270b6)
++++ b/Dashboard/scripts/static/js/registerValidation.js	(date 1709443837113)
+@@ -1,3 +1,4 @@
++/*
+ function handleFormSubmit(event) {
+     // Prevent the default form submission behavior
+     event.preventDefault();
+@@ -28,3 +29,4 @@
+ document.addEventListener("DOMContentLoaded", function() {
+     document.getElementById("login-form").addEventListener("submit", handleFormSubmit);
+ });
++*/
+\ No newline at end of file

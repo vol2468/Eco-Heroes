@@ -14,17 +14,18 @@
         <div class="wrapper">
             <div id="header">
                 <header>
-                    <a href="index.html" id="logo">
+                    <a href="index" id="logo">
                     <img src="../../static/images/logo_green.png" alt="Eco Heroes Logo" height="100px"></a>
-                    <a href="info.html" id="sdg"><img src="https://sycratech.com/wp-content/uploads/2023/04/sdgs-Goals.png" height="80px"/></a>
-                    <a id="user" href="login.html"><img alt="Profile" src ="../../static/images/defaultPic.png" height="50px"></a>
+                    <a href="info" id="sdg"><img src="https://sycratech.com/wp-content/uploads/2023/04/sdgs-Goals.png" height="80px"/></a>
+                    <a id="user" href="login"><img alt="Profile" src ="../../static/images/defaultPic.png" height="50px"></a>
+                    <span id="level">Level: 2</span>
                 </header>
             </div>
-            <h1>Air pollution for</h1>
+            <h1>Air quality for</h1>
             <div id="container-1">
                 <div id="leftside-1">
                     <h2>Your city is ...</h2>
-                    <p id="airQ1">89</p>
+                    <p id="airQ1">{{my_aqi}}</p>
                     <!-- <p id="airQ1">50</p> -->
                 </div>
                 <div id="rightside-1">
@@ -35,15 +36,27 @@
             <p id="win-lose"></p>
             <div id="container-2">
                 <div id="leftside-2">
+                    <a href="index" class="arrow"><img src="../../static/images/go_left.png" height="150px"/></a>
+                </div>
+                <div id="rightside-2">
+                    <a href="map" class="arrow"><img src="../../static/images/go_right.png" height="150px"/></a>
+                </div>
+            </div>
+            <div id="container-3">
+                <div id="leftside-3">
                     <p class="common">The most common pollutant is <span class="pollutant">SO3</span></p>
                     <p class="desc"><span class="bold">Effect: </span>bla bla bla</p>
                     <p class="desc"><span class="bold">Recommendation: </span>bla bla bla</p>
                 </div>
-                <div id="rightside-2">
+                <div id="rightside-3">
                     <p class="common">The most common pollutant is <span class="pollutant">{{dominant}}</span></p>
                     <p class="desc"><span class="bold">Effect: </span>{{effects}}</p>
                     <p class="desc"><span class="bold">Recommendation: </span>{{children}}</p>
                 </div>
+            </div>
+            <div id="check-read">
+                <input type="checkbox" id="read" name="read" value="read">
+                <label for="read"> I read the description!</label><br>
             </div>
            
             <!-- aqi: {{aqi}} <br>
