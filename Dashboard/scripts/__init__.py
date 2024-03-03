@@ -1,17 +1,14 @@
 from flask import Flask, render_template, request
-from os import path
-import requests
-import json
+from flask_sqlalchemy import SQLAlchemy
 
-
-#db = SQLAlchemy()
-#DB_NAME = "database.db"
+db = SQLAlchemy()
+DB_NAME = "database.db"
 
 
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'r'
- #   app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
  #   db.init_app(app)
 
     from .views import views
