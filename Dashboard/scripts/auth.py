@@ -1,9 +1,9 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-
+import flask_login
 
 # <editor-fold desc="Description">
 # from .models import User
-# from . import db
+# import db
 # from flask_login import login_user, login_required, logout_user, current_user
 # </editor-fold>
 from scripts.compare import compare

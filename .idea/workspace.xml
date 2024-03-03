@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Eco-Heroes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Eco-Heroes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/js/registerValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/js/registerValidation.js" afterDir="false" />
     </list>
@@ -30,6 +29,7 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Dashboard/main.py" root0="FORCE_HIGHLIGHTING" />
@@ -221,7 +221,21 @@
       <option name="project" value="LOCAL" />
       <updated>1709439796731</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="init update">
+      <created>1709443858779</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709443858779</updated>
+    </task>
+    <task id="LOCAL-00020" summary="auth clean">
+      <created>1709447034335</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709447034335</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +265,8 @@
     <MESSAGE value="POST request on login" />
     <MESSAGE value="POST request on register" />
     <MESSAGE value="auth update for POST" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth update for POST" />
+    <MESSAGE value="init update" />
+    <MESSAGE value="auth clean" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth clean" />
   </component>
 </project>
