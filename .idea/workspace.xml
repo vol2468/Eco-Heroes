@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/js/registerValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/js/registerValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709447959439</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="database creation in init">
+      <created>1709448107116</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1709448107116</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

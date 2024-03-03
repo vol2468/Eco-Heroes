@@ -1,12 +1,11 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-import flask_login
 
 # <editor-fold desc="Description">
 # from .models import User
-# import db
-# from flask_login import login_user, login_required, logout_user, current_user
+from . import db
+from flask_login import login_user, login_required, logout_user, current_user
 # </editor-fold>
-from scripts.compare import compare
+from . import compare
 
 auth = Blueprint('auth', __name__)
 
