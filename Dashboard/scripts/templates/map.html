@@ -87,13 +87,14 @@
                     + "<br>Compare with your City?"
                     + "<br>Lat: " + e.latlng.toString().substring(7, e.latlng.toString().indexOf(","))
                     + "<br>Long: " + e.latlng.toString().substring(e.latlng.toString().indexOf(",") + 2, e.latlng.toString().length - 1)
+                    + "<button id=\"jumpButton\">Let's Compare!</button>"
                 )
                 .openOn(map);
 
-                const form = document.createElement("form");
-                form.method = "post";
-                form.action = "./../compare.py";
-                form.id = "latlongForm";
+            const form = document.createElement("form");
+            form.method = "post";
+            form.action = "./compare.html";
+            form.id = "latlongForm";
 
             const lat = document.createElement("input");
             lat.name = "lat";
@@ -106,14 +107,7 @@
             long.value = e.latlng.toString().substring(e.latlng.toString().indexOf(",") + 2, e.latlng.toString().length - 1);
             form.appendChild(long);
             document.body.appendChild(form);
-
-            L.popup()
-                .setLatLng([e.latlng.toString().substring(7, e.latlng.toString().indexOf(","))
-                    , e.latlng.toString().substring(e.latlng.toString().indexOf(",") + 2, e.latlng.toString().length - 1)])
-                .setContent("<b>You chose ____ !</b><br>"
-                    + "<button id=\"jumpButton\">Let's Compare!</button>")
-                .openOn(map);
-
+    
             document.getElementById("jumpButton").addEventListener("click", Jump);
             function Jump() {
                 form.submit();
