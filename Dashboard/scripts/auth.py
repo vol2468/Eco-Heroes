@@ -7,6 +7,7 @@ from scripts.compare import compareQuality
 # from . import db
 # from flask_login import login_user, login_required, logout_user, current_user
 # </editor-fold>
+from Dashboard.scripts.compare import compare
 
 auth = Blueprint('auth', __name__)
 
@@ -29,6 +30,17 @@ def logout():
 @auth.route('/register')
 def register():
     return render_template("register.html")
+
+
+@auth.route('/map')
+def mymap():
+    return render_template('map.html')
+
+
+@auth.route('/compare.py', methods=['GET', 'POST'])
+def call_compare():
+    result = compare()
+    return result
 
 
 

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/compare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +97,35 @@
       <option name="project" value="LOCAL" />
       <updated>1709425784099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix index routing by deleting .html">
+      <created>1709427409101</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709427409101</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix index routing by deleting .html">
+      <created>1709427502618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709427502618</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix login routing by deleting .html">
+      <created>1709427771220</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709427771220</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix register routing by deleting .html&#10;auth added map route and compare route">
+      <created>1709428488894</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709428488894</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +141,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reorganised files" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganised files" />
+    <MESSAGE value="fix index routing by deleting .html" />
+    <MESSAGE value="fix login routing by deleting .html" />
+    <MESSAGE value="fix register routing by deleting .html&#10;auth added map route and compare route" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix register routing by deleting .html&#10;auth added map route and compare route" />
   </component>
 </project>
