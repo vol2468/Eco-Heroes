@@ -15,6 +15,10 @@ auth = Blueprint('auth', __name__)
 def login():
     return render_template("login.html")
 
+@auth.route('/goal')
+def goal():
+    return render_template("goal.html")
+
 
 @auth.route('/index')
 def index():
