@@ -7,9 +7,7 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'r'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
-
-    db=SQLAlchemy(app)
-
+    db = SQLAlchemy(app)
 
     class User(db.Model, UserMixin):
         username = db.Column(db.String(100), primary_key=True, unique=True)
@@ -30,11 +28,13 @@ def create_app():
     app.register_blueprint(auth, url_prefix='/')
 
     # from .models import User
+    # from .models import User
 
     # db.create_all()
 
     with app.app_context():
         db.create_all()
+
     return app
 
 
