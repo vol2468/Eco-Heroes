@@ -165,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709431861605</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="db models">
+      <created>1709432228710</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709432228710</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +195,7 @@
     <MESSAGE value="compare fix" />
     <MESSAGE value="database init" />
     <MESSAGE value="db import" />
-    <option name="LAST_COMMIT_MESSAGE" value="db import" />
+    <MESSAGE value="db models" />
+    <option name="LAST_COMMIT_MESSAGE" value="db models" />
   </component>
 </project>
