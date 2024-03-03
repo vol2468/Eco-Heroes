@@ -45,8 +45,8 @@ def register():
 #         connection.commit()
 #         connection.close()
     return render_template("register.html")
-# @auth.route('/map')
 
+@auth.route('/map')
 def map():
     return render_template('map.html')
 
