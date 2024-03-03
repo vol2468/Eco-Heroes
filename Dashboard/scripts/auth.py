@@ -37,20 +37,11 @@ def mymap():
 
 
 @auth.route('/compare.py', methods=['GET', 'POST'])
-def compare():
+def call_compare():
     result = compare()
     return result
 
 
-
-@auth.route('/map.html')
-def map():
-    return render_template('map.html')
-
-@auth.route('/compare.py', methods=['GET', 'POST'])
-def call_compare():
-    result = compareQuality()
-    return result
 
 
 
