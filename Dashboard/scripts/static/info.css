@@ -9,3 +9,63 @@ h1 {
     text-align: center;
     font-size: 1.2em;
 }
+
+.Radius5 {  
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.Button {
+	overflow: hidden;
+	width: 250px;
+	height: 50px;
+	margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+	padding: 0;
+}
+.Button a {
+	display: block;
+	position: relative;
+	z-index: 100;
+	text-align:center;
+	background: #00a0e9;
+	color: #fff;
+	font-size: 14px;
+	line-height: 50px;
+	text-decoration:none;
+}
+.Button a:hover {
+	background: #3ab2e9;
+}
+
+#IconList3 a:before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 19px;
+	width: 16px;
+	height: 16px;
+	margin-top: -8px;
+	border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	background: #fff;
+}
+#IconList3 a:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	width: 0;
+	height: 0;
+	margin-top: -5px;
+	border: 5px solid transparent;
+	border-left: 5px solid #00a0e9;
+}
+#IconList3 a:hover:after {
+	border-left: 5px solid #3ab2e9;
+}
