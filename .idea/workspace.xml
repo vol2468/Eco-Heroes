@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709433532205</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="auth compare add Dashboard to import">
+      <created>1709433715620</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709433715620</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +224,7 @@
     <MESSAGE value="db models" />
     <MESSAGE value="create database function" />
     <MESSAGE value="cleaned main" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned main" />
+    <MESSAGE value="auth compare add Dashboard to import" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth compare add Dashboard to import" />
   </component>
 </project>
