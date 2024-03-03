@@ -12,7 +12,7 @@ class User(db.Model, UserMixin):
 class SDG(db.Model):
     id = db.Column(db.Integer, primary_key=True, unique=True)
     image = db.Column()
-    desc = db.Column(db.String(1000))
-    orgName = db.Column(db.String(100))
+    desc = db.Column(db.String(10000))
+    orgName = db.Column(db.String(500))
     ordLogo = db.Column()
     orgLink = db.Column(db.String(300))
