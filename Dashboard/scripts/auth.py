@@ -131,59 +131,28 @@ def quiz16():
     return render_template('quiz_16.html')
 
 @auth.route('/goal1')
-def quiz():
+def goal1():
     return render_template('goal1.html')
 @auth.route('/goal2')
-def quiz():
+def goal2():
     return render_template('goal2.html')
 @auth.route('/goal3')
-def quiz():
+def goal3():
     return render_template('goal3.html')
 
 @auth.route('/goal4')
-def quiz():
+def goal4():
     return render_template('goal4.html')
 
 @auth.route('/goal5')
-def quiz():
+def goal5():
     return render_template('goal5.html')
 
 @auth.route('/goal6')
-def quiz():
+def goal6():
     return render_template('goal6.html')
-@auth.route('/goal7')
-def quiz():
-    return render_template('goal7.html')
-@auth.route('/goal8')
-def quiz():
-    return render_template('goal8.html')
-@auth.route('/goal9')
-def quiz():
-    return render_template('goal9.html')
-@auth.route('/goal10')
-def quiz():
-    return render_template('goal10.html')
-@auth.route('/goal11')
-def quiz():
-    return render_template('goal11.html')
-@auth.route('/goal12')
-def quiz():
-    return render_template('goal12.html')
-@auth.route('/goal13')
-def quiz():
-    return render_template('goal13.html')
-@auth.route('/goal14')
-def quiz():
-    return render_template('goal14.html')
-@auth.route('/goal15')
-def quiz():
-    return render_template('goal15.html')
-@auth.route('/goal16')
-def quiz():
-    return render_template('goal16.html')
-@auth.route('/goal17')
-def quiz():
-    return render_template('goal17.html')
+
+
 
 
 
