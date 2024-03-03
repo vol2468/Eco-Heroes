@@ -29,7 +29,7 @@ h2 {
 #win-lose {
     text-align: center;
     font-size: 3em;
-    color: orange;
+    color: #FCA100;
     display: inline-block;
     animation: bounce 1s infinite;
 }
@@ -65,7 +65,11 @@ h2 {
     margin: 1em;
     border-radius: 1em;
     align-items: center;
+    text-align: left;
     width: 450px;
+}
+.bold {
+    font-weight: bold;
 }
 .pollutant {
     color: blue;

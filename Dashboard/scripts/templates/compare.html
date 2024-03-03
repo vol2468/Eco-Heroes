@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../../static/header.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../../static/js/compare.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -24,6 +25,7 @@
                 <div id="leftside-1">
                     <h2>Your city is ...</h2>
                     <p id="airQ1">89</p>
+                    <!-- <p id="airQ1">50</p> -->
                 </div>
                 <div id="rightside-1">
                     <h2>Your selected city is ...</h2>
@@ -34,13 +36,13 @@
             <div id="container-2">
                 <div id="leftside-2">
                     <p class="common">The most common pollutant is <span class="pollutant">SO3</span></p>
-                    <p class="desc">Effect: <span>bla bla bla</span></p>
-                    <p class="desc">Recommendation: <span>bla bla bla</span></p>
+                    <p class="desc"><span class="bold">Effect: </span>bla bla bla</p>
+                    <p class="desc"><span class="bold">Recommendation: </span>bla bla bla</p>
                 </div>
                 <div id="rightside-2">
                     <p class="common">The most common pollutant is <span class="pollutant">{{dominant}}</span></p>
-                    <p class="desc">Effect: <span>{{effects}}</span></p>
-                    <p class="desc">Recommendation: <span>{{children}}</span></p>
+                    <p class="desc"><span class="bold">Effect: </span>{{effects}}</p>
+                    <p class="desc"><span class="bold">Recommendation: </span>{{children}}</p>
                 </div>
             </div>
            
