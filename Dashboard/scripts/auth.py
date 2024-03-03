@@ -45,6 +45,10 @@ def call_compare():
     result = compare()
     return result
 
+@auth.route('/info')
+def info():
+    return render_template("info.html")
+
 @auth.route('/quiz')
 def quiz():
     return render_template('quiz.html')
