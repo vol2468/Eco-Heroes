@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/js/registerValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/js/registerValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1709433715620</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="POST request on login">
+      <created>1709435227714</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709435227715</updated>
+    </task>
+    <task id="LOCAL-00017" summary="POST request on register">
+      <created>1709435272685</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709435272685</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +241,8 @@
     <MESSAGE value="create database function" />
     <MESSAGE value="cleaned main" />
     <MESSAGE value="auth compare add Dashboard to import" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth compare add Dashboard to import" />
+    <MESSAGE value="POST request on login" />
+    <MESSAGE value="POST request on register" />
+    <option name="LAST_COMMIT_MESSAGE" value="POST request on register" />
   </component>
 </project>
