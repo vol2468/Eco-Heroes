@@ -1,12 +1,13 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-import flask_login
+import requests
+
 
 # <editor-fold desc="Description">
 # from .models import User
-# import db
+# from . import db
 # from flask_login import login_user, login_required, logout_user, current_user
 # </editor-fold>
-from scripts.compare import compare
+from compare import compare
 
 auth = Blueprint('auth', __name__)
 
@@ -14,7 +15,6 @@ auth = Blueprint('auth', __name__)
 @auth.route('/login')
 def login():
     return render_template("login.html")
-
 
 @auth.route('/goal')
 def goal():
@@ -35,11 +35,9 @@ def logout():
 def register():
     return render_template("register.html")
 
-
 @auth.route('/map')
 def map():
     return render_template('map.html')
-
 
 @auth.route('/quiz')
 def quiz():
