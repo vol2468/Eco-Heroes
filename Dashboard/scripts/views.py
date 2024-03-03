@@ -1,4 +1,4 @@
-from flask import Blueprint #, request, flash, render_template
+from flask import Blueprint, request, flash, render_template
 # from flask_login import login_required, current_user
 # from .models import User
 # from . import db
@@ -19,5 +19,5 @@ def home():
     #     db.session.commit()
     #     flash('User added!', category='success')
     #     return render_template("index.html", user=current_user)
-    return "<h1>Test</h1>"
+    return render_template("index.html")
 

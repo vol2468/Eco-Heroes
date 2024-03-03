@@ -12,6 +12,11 @@ function handleFormSubmit(event) {
 
     // Store them in database
     
+    // connection = sqlite3.connect('database.db')
+    // cur = connection.cursor()
+    // query = ("SELECT latitude, longitude, FROM city WHERE cname=%s")
+    // latitude=
+    // cur.execute("INSERT INTO kids (username, city, latitude, longitude) VALUES (?, ?, ?, ?)", (username, mycity, 0, 0))
 
 
     // Perform login validation

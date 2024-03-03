@@ -1,11 +1,13 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from scripts.compare import compare
+import sqlite3
 
 auth = Blueprint('auth', __name__)
 
 @auth.route('/')
 def home():
     return render_template("index.html")
+    
 
 
 @auth.route('/login')
@@ -28,9 +30,23 @@ def logout():
 
 @auth.route('/register')
 def register():
-    return render_template("register.html")
+#     if request.method == 'POST':
+#         username = request.form.get('username')
+#         city = request.form.get('city')
+#         connection = sqlite3.connect('database.db')
+#         cursor = connection.cursor()
 
-@auth.route('/map')
+#         # Insert images and descriptions into the sdgs table
+#         cursor.execute("INSERT INTO kids (username, city) VALUES (?, ?, ?, ?)", (username, city, 0, 0))
+
+#         flash('Logged in successfully!', category='success')
+
+#         # Commit changes and close connection
+#         connection.commit()
+#         connection.close()
+    return render_template("register.html")
+# @auth.route('/map')
+
 def map():
     return render_template('map.html')
 
@@ -113,6 +129,61 @@ def quiz15():
 @auth.route('/quiz16')
 def quiz16():
     return render_template('quiz_16.html')
+
+@auth.route('/goal1')
+def quiz():
+    return render_template('goal1.html')
+@auth.route('/goal2')
+def quiz():
+    return render_template('goal2.html')
+@auth.route('/goal3')
+def quiz():
+    return render_template('goal3.html')
+
+@auth.route('/goal4')
+def quiz():
+    return render_template('goal4.html')
+
+@auth.route('/goal5')
+def quiz():
+    return render_template('goal5.html')
+
+@auth.route('/goal6')
+def quiz():
+    return render_template('goal6.html')
+@auth.route('/goal7')
+def quiz():
+    return render_template('goal7.html')
+@auth.route('/goal8')
+def quiz():
+    return render_template('goal8.html')
+@auth.route('/goal9')
+def quiz():
+    return render_template('goal9.html')
+@auth.route('/goal10')
+def quiz():
+    return render_template('goal10.html')
+@auth.route('/goal11')
+def quiz():
+    return render_template('goal11.html')
+@auth.route('/goal12')
+def quiz():
+    return render_template('goal12.html')
+@auth.route('/goal13')
+def quiz():
+    return render_template('goal13.html')
+@auth.route('/goal14')
+def quiz():
+    return render_template('goal14.html')
+@auth.route('/goal15')
+def quiz():
+    return render_template('goal15.html')
+@auth.route('/goal16')
+def quiz():
+    return render_template('goal16.html')
+@auth.route('/goal17')
+def quiz():
+    return render_template('goal17.html')
 
 
 
