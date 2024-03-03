@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1254026-9420-4ca7-9ec3-51cb690280d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Eco-Heroes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Eco-Heroes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/js/loginValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/scripts/static/js/registerValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/scripts/static/js/registerValidation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,15 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/lk/Documents/GitHub/Eco-Heroes",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lk/Documents/GitHub/Eco-Heroes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Dashboard/scripts/static" />
@@ -198,7 +200,28 @@
       <option name="project" value="LOCAL" />
       <updated>1709433715620</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="POST request on login">
+      <created>1709435227714</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709435227715</updated>
+    </task>
+    <task id="LOCAL-00017" summary="POST request on register">
+      <created>1709435272685</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709435272685</updated>
+    </task>
+    <task id="LOCAL-00018" summary="auth update for POST">
+      <created>1709439796731</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709439796731</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +248,9 @@
     <MESSAGE value="create database function" />
     <MESSAGE value="cleaned main" />
     <MESSAGE value="auth compare add Dashboard to import" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth compare add Dashboard to import" />
+    <MESSAGE value="POST request on login" />
+    <MESSAGE value="POST request on register" />
+    <MESSAGE value="auth update for POST" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth update for POST" />
   </component>
 </project>

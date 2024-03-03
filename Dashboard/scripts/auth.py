@@ -15,6 +15,7 @@ auth = Blueprint('auth', __name__)
 def login():
     return render_template("login.html")
 
+
 @auth.route('/goal')
 def goal():
     return render_template("goal.html")
@@ -34,9 +35,11 @@ def logout():
 def register():
     return render_template("register.html")
 
+
 @auth.route('/map')
 def map():
     return render_template('map.html')
+
 
 @auth.route('/quiz')
 def quiz():
