@@ -9,6 +9,7 @@ class User(db.Model, UserMixin):
     longitude = db.Column(db.String(100))
 
 
+"""
 class SDG(db.Model):
     id = db.Column(db.Integer, primary_key=True, unique=True)
     image = db.Column()
@@ -16,3 +17,4 @@ class SDG(db.Model):
     orgName = db.Column(db.String(500))
     ordLogo = db.Column()
     orgLink = db.Column(db.String(300))
+"""
