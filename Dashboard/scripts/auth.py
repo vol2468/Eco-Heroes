@@ -1,8 +1,13 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-import requests
-from compare import compare
+# import flask_login
+from scripts.compare import compare
 
 auth = Blueprint('auth', __name__)
+
+@auth.route('/')
+def home():
+    return render_template("index.html")
+
 
 @auth.route('/login')
 def login():
@@ -14,7 +19,7 @@ def goal():
 
 @auth.route('/index')
 def index():
-    return ("index.html")
+    return render_template("index.html")
 
 
 @auth.route('/logout')

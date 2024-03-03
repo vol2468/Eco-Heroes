@@ -12,3 +12,10 @@ CREATE TABLE sdgs (
     img IMAGE,
     explanation varchar(100)
 );
+
+CREATE TABLE city (
+    id INTEGER PRIMARY KEY,
+    img IMAGE,
+    explanation varchar(100)
+);
+
