@@ -3,6 +3,9 @@
     flex-direction: column;
     min-height: 85vh;
 }
+body {
+    background-color: #E3FFB8;
+}
 h1 {
     text-align: center;
     font-size: 50px;
@@ -58,7 +61,6 @@ h2 {
     flex-direction: column;
 }
 #container-3 {
-    margin-bottom: 4em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -89,4 +91,9 @@ h2 {
 .pollutant {
     color: blue;
     font-size: 1.5em;
+}
+#check-read {
+    margin: 2em 2em 3em 2em;
+    text-align: center;
+    font-size: 1.2em;
 }
