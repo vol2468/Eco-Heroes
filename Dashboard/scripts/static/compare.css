@@ -29,7 +29,17 @@ h2 {
 #win-lose {
     text-align: center;
     font-size: 3em;
-    color: red;
+    color: orange;
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 #container-2 {
     margin-top: 1em;
@@ -48,8 +58,8 @@ h2 {
     margin: 1em;
 }
 .desc {
-    border: 1px solid orange;
-    background-color: orange;
+    border: 1px solid #FFD18E;
+    background-color: #FFD18E;
     font-size: 1.2em;
     padding: 1em;
     margin: 1em;
