@@ -133,9 +133,11 @@ def quiz16():
 @auth.route('/goal1')
 def goal1():
     return render_template('goal1.html')
+
 @auth.route('/goal2')
 def goal2():
     return render_template('goal2.html')
+
 @auth.route('/goal3')
 def goal3():
     return render_template('goal3.html')
@@ -152,6 +154,49 @@ def goal5():
 def goal6():
     return render_template('goal6.html')
 
+@auth.route('/goal7')
+def goal7():
+    return render_template('goal7.html')
+
+@auth.route('/goal8')
+def goal8():
+    return render_template('goal8.html')
+
+@auth.route('/goal9')
+def goal9():
+    return render_template('goal9.html')
+
+@auth.route('/goal10')
+def goal10():
+    return render_template('goal10.html')
+
+@auth.route('/goal11')
+def goal11():
+    return render_template('goal11.html')
+
+@auth.route('/goal12')
+def goal12():
+    return render_template('goal12.html')
+
+@auth.route('/goal13')
+def goal13():
+    return render_template('goal13.html')
+
+@auth.route('/goal14')
+def goal14():
+    return render_template('goal14.html')
+
+@auth.route('/goal15')
+def goal15():
+    return render_template('goal15.html')
+
+@auth.route('/goal16')
+def goal16():
+    return render_template('goal16.html')
+
+@auth.route('/goal17')
+def goal17():
+    return render_template('goal17.html')
 
 
 

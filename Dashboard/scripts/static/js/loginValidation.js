@@ -10,7 +10,7 @@ function handleFormSubmit(event) {
 
 
     // Perform login validation
-    if (username === "taii") {
+    if (username === "jun") {
         // Redirect to the index page (replace 'index.html' with the actual URL)
         window.location.href = "index";
     } else {
