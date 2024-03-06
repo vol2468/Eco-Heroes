@@ -62,9 +62,9 @@ def info():
     return render_template("info.html")
 
 
-@auth.route('/quiz')
-def quiz():
-    return render_template('quiz.html')
+# @auth.route('/quiz')
+# def quiz():
+#     return render_template('quiz.html')
 
 @auth.route('/quiz1')
 def quiz1():
@@ -129,6 +129,10 @@ def quiz15():
 @auth.route('/quiz16')
 def quiz16():
     return render_template('quiz_16.html')
+
+@auth.route('/quiz17')
+def quiz17():
+    return render_template('quiz_17.html')
 
 @auth.route('/goal1')
 def goal1():
