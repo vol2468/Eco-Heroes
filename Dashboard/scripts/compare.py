@@ -13,7 +13,7 @@ def compare(): #(latitude, longitude)
     latitude=float(mapdata.get('lat'))
     longitude=float(mapdata.get('long'))
     url = 'https://airquality.googleapis.com/v1/currentConditions:lookup'
-    KEY = 'AIzaSyB9dQ6T8KIegYRV4j8FSlPdVGKc9EuhY68'
+    KEY = ''
     header = {"X-goog-api-key": KEY, "Content-Type": "application/json"}
     data = {
         "universalAqi": True,
