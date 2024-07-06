@@ -6,4 +6,4 @@ Eco Heroes is a user-friendly e-learning platform that offers a unique feature a
 
 Website at a glance: <https://youtu.be/gpioIwNMO04>
 
-![logo](Dashboard/scripts/static/images/logo_green.png)
+![main page](main.png)
